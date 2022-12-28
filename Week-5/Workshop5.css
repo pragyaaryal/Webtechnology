@@ -1,0 +1,109 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.container1{
+    display: flex;
+    height: 150%;
+}
+.leftside{
+    background-color:burlywood ;
+    color: black;
+    padding: 5%;
+    width: 50%;
+}
+h1{
+    font-size: 50px;
+    font-style: normal;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+h2{
+    font-size: 40px;
+    font-style: italic;
+    margin-bottom: 100px;
+    padding: 10px;
+}
+.organizer{
+  font-size: 20px;
+} 
+.venue{
+  font-size: 20px;
+}
+.button{
+    margin-top: 20px;
+}
+  
+.button a {
+    display: inline-block;
+    padding: 10px 50px;
+    background:antiquewhite ;
+    border-radius: 30px;
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    line-height: 1.4;
+    font-weight: 800;
+    transition: all 0.5s ease;
+}
+  
+.button a:hover {
+    background: black;
+    color: orange;
+}
+img{
+    width: 100%;
+    height: 100%;
+
+}
+.rightside{
+    width: 50%;
+}
+
+
+.container2{
+    display: flex;
+    height: 150%;
+}
+.leftside2{
+    background-color: pink;
+    color: black;
+    padding: 5%;
+}
+
+.rightside{
+    width:50%;
+}
+
+.address{
+    padding: 30px;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+.contact{
+    margin-top: 20px;
+    margin-bottom: 30px;
+    font-size: 20px;
+}
+
+.button2{
+    margin-top: 20px;
+}
+.button2 a {
+    display: inline-block;
+    padding: 10px 50px;
+    background: rgb(67, 3, 67);
+    border-radius: 30px;
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    line-height: 1.4;
+    font-weight: 800;
+    transition: all 0.5s ease;
+}
+.button2 a:hover {
+    background: black;
+    color:aquamarine;
+}
