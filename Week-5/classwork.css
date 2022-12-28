@@ -1,0 +1,29 @@
+header{
+    background-color:aqua;
+    color: black;
+   font-size: 80px;1
+
+}
+.one{
+    background-color: blue;
+    color: black;
+    flex: 3;
+    font-size: 60px;
+    padding: 50px;
+}
+.two{
+    background-color: rgb(231, 231, 0);
+    color: black;
+    flex: 1;
+    font-size: 60px;
+    padding: 50px;
+}
+div{
+    display: flex;
+    height: 600px;
+}
+footer{
+    background-color: aquamarine;
+    color: blue;
+    font-size: 50px;
+}
