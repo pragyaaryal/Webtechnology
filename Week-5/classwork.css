@@ -1,7 +1,12 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
 header{
     background-color:aqua;
     color: black;
-   font-size: 80px;1
+   font-size: 80px;
 
 }
 .one{

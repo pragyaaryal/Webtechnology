@@ -3,9 +3,11 @@
     margin: 0;
     padding: 0;
 }
+
+/*Slide-1 */ 
 .container1{
     display: flex;
-    height: 150%;
+    height: 100%;
 }
 .leftside{
     background-color:burlywood ;
@@ -22,19 +24,22 @@ h1{
 h2{
     font-size: 40px;
     font-style: italic;
-    margin-bottom: 100px;
+    margin-top: 30px;
+    margin-bottom: 150px;
     padding: 10px;
 }
 .organizer{
+  padding: 20px;
   font-size: 20px;
 } 
-.venue{
+
+.date{
+  padding: 20px;
   font-size: 20px;
 }
 .button{
-    margin-top: 20px;
+    margin-top: 60px;
 }
-  
 .button a {
     display: inline-block;
     padding: 10px 50px;
@@ -61,10 +66,95 @@ img{
     width: 50%;
 }
 
-
+/*Slide-2*/ 
 .container2{
+    background-color: rgba(140, 199, 234, 0.894);
     display: flex;
     height: 150%;
+    margin-top: 20px;
+}
+.mind{
+    font-size: 100px;
+    font-weight: bolder;
+}
+.leftside1{
+    flex: 1;
+    padding: 50px;
+}
+.rightside1{
+    flex:1;
+    padding: 70px;
+    font-size: 30px;
+
+}
+.photo{
+    height: 80%;
+    padding: 70px;
+    background-color: rgba(140, 199, 234, 0.894);
+}
+
+/*Slide-3*/ 
+
+header{
+    background-color: lavender;
+    font-size: 70px;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    margin-top: 30px;
+}
+.container3{
+    background-color: lavender;
+    display: flex;
+    height: 150%;
+}
+.first, .second, .third{
+    text-align: center;
+    font-size: medium;
+    font-weight: bold;
+    font-style: italic;
+}
+.one, .two, .three{
+    flex: 1fr;
+    padding: 50px;
+    margin: 20px;
+    text-align: center;
+}
+/*Slide-4 */ 
+
+.container4{
+    margin-top: 30px;
+    height: 150%;
+    display: flex;
+}
+.rightside4, .leftside4{
+    flex:1fr;
+}
+.rightside4{
+    text-align: center;
+    background-color: rgb(71, 17, 5);
+    font-size: 50px;
+    font-weight: bold;
+    padding: 50px;
+    margin-bottom: 20px ;
+    color: aliceblue;
+
+}
+.details{
+    color: azure;
+    margin-top: 150px;
+    font-size: 20px;
+    padding: 50px;
+}
+
+
+
+/*Slide-5 */ 
+
+.container5{
+    display: flex;
+    height: 150%;
+    margin-top: 40px;
 }
 .leftside2{
     background-color: pink;
@@ -72,17 +162,18 @@ img{
     padding: 5%;
 }
 
-.rightside{
+.rightside2{
     width:50%;
 }
 
 .address{
-    padding: 30px;
+    padding: 20px;
     margin-bottom: 20px;
     font-size: 20px;
 }
 
 .contact{
+    padding: 20px;
     margin-top: 20px;
     margin-bottom: 30px;
     font-size: 20px;
@@ -107,3 +198,5 @@ img{
     background: black;
     color:aquamarine;
 }
+
+
