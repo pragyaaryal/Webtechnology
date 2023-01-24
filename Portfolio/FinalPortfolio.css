@@ -12,14 +12,13 @@
     padding: 2%;
     font-family:fantasy;
 }
-.container1{
+.Home{
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     display: flex;
     height: 80%;
     background-color: black;
 }
 .leftside{
- 
     color: whitesmoke;
     padding: 5%;
     width: 50%;
@@ -29,24 +28,26 @@
 }
 .button{
     margin-top: 80px;
+    display: flex; 
+    justify-content: space-between;
 }
-
-.button a {
-    display: inline-block;
-    padding: 10px 50px;
-    background: white;
-    border-radius: 30px;
+#button1, #button2{
     text-decoration: none;
+    flex: 1;
+    padding: 10px 50px;
+    margin-right: 10px;
+    border-radius: 30px;
+    background: white;
     color: black;
     font-size: 18px;
     line-height: 1.4;
     font-weight: 800;
     transition: all 0.5s ease;
 }
-  
-.button a:hover {
-    background: lightcyan;
-    color: black;
+.button1 :hover, .button2 :hover{
+    border-radius: 30px;
+    background:rgb(20, 0, 30);
+    color: white;
 }
 
 #myphoto{
@@ -68,3 +69,35 @@
     padding-top: 50px;
     
 }
+/*Slide-2 */ 
+.About{
+    background-color: black;
+    display: flex;
+}
+.rightside1, .leftside1{
+    flex: 1;
+
+}
+#About{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 40px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    color: white;
+    text-align: center;
+}
+#secondphoto{
+    height: 100%;
+    width: 100%;
+    padding: 8%;
+    border-image: 1 0;
+    opacity: 0.8;
+}
+#description{
+    color: white;
+    padding: 5px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: normal;
+}
+
