@@ -6,62 +6,156 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="FinalPortfolio.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
+    <script src="portfolio.js"></script>
  <!----slide-1---->
  <div class="nav">
     <nav>
-        <a href="#Home" style="text-decoration:none; color:white; padding: 2%;">Home</a>
-        <a href="#About" style="text-decoration:none; color:white; padding: 2%;">About</a>
-        <a href="#Academics" style="text-decoration:none; color:white; padding: 2%;">Academics</a>
-        <a href="#Extra-Curriculars"style="text-decoration:none; color: white; padding: 2%;">Extra-Curriculars</a>
-        <a href="#Blog"style="text-decoration:none; color: white; padding: 2%;">Blog</a>
-        <a href="#Work"style="text-decoration:none; color: white; padding: 2%;">Work-Experience</a>
-        <a href="#Connect"style="text-decoration:none; color: white; padding: 2%;"> Connect | Contact </a>
+        <a href="#About" style="text-decoration:none; color: #601e1e; padding: 2%;">About</a>
+        <a href="#Academics" style="text-decoration:none;color:  #601e1e; padding: 2%;">Academics</a>
+        <a href="#Extra-Curriculars"style="text-decoration:none; color: #601e1e; padding: 2%;">Extra-Curriculars</a>
+        <a href="#Blog"style="text-decoration:none; color:#601e1e; padding: 2%;">Blog</a>
+        <a href="#Experience"style="text-decoration:none; color:  #601e1e; padding: 2%;">Experience</a>
+        <a href="#Connect"style="text-decoration:none; color: #601e1e; padding: 2%;"> Connect | Contact </a>
     </nav>
+
 </div>
 <div class="Home">
     <div class="leftside">
-        <h1 id="name">Pragya Aryal</h1>
-        <h2 id="designation">Student</h2>
-        <div class="button">
-            <section id="button1">
-                <input type="button" value="Portfolio">
-            </section>
-            <section id="button2">
-                <input type="button" value="Contact me">
-            </section>
-         </div>
+        <img id ="myphoto" src="first.jpg" alt="photo">
     </div>
     <div class="rightside">
-        <img id ="myphoto" src="my.jpg" alt="photo">
+        <div class="shape">
+            <img id="shape"src="shape.jpg" alt="shape">
+        </div>
+        <div class="text">
+            <h1 id="name">Pragya Aryal</h1>
+            <h2 id="designation">Student</h2>
+        </div>
+        <div class="icon1">
+            <a href="https://www.linkedin.com/in/pragya-aryal-652781212/" target="_blank"><i class="fa fa-linkedin"></i></a>
+            <a href="mailto:pragyaaryal18@gmail.com" target="_blank"><i class="fa fa-envelope"></i></a>
+            <a href="https://www.instagram.com/creating_pragya/" target="_blank"><i class="fa fa-instagram"></i></a>
+        </div>
     </div>
 </div>
 
 <!----slide-2---->
-<div class="About">
-    <div class="leftside1">
-        <img id="secondphoto" src="Myphoto.JPEG" alt="merophoto">
-    </div>
-    <div class="rightside1">
-        <h1 id="About"> About </h1>
-        <h2 id="description"> I am an enthusiastic Computer Science Student eager to learn new skills and information. I apply education and personal talents to learn new subjects in detail and delve into challenging topics. I collaborate well on group projects and prepare diligently for assignments. In future, I intend to connect Computer science education with Gender studies, research and development.</h2>
-    </div>
-</div>
+
+
 <!----slide-3---->
 <div id="Academics">
-    
+    <div class="move">
+        <span class="marker-title"> <a href="https://heraldcollege.edu.np"target="_blank" style="text-decoration:none;">Herald College Kathmandu</a></span>
+        <span class="marker-caption">
+            <h2>Bachelors of Science (Hons) Computer Science</h2>
+            <h3> 2022-Current </h3> 
+            <ol>Fundamentals of computing</ol> 
+            <ol>Introduction to Programming and problem solving</ol> 
+            <ol>Academic skills</ol> 
+            <ol>Web technology</ol>
+        </span>
+    </div>
+    <div class="move2">
+        <span class="marker-title"> Budhanilkantha School </span>
+        <span class="marker-caption">
+        <h2> High School Graduate Science (Biology)</h2>
+        <h3>2019-2021</h3>
+        <p> GPA 3.73 (Grade 11) GPA 3.52 (Grade 12)</p>
+        </span>
+    </div>
+        
 </div>
+
 <!----slide-4---->
+<h1 id="Extracurriculars">Extra-Curriculars</h1>
 <div id="Extra-Curriculars">
+    <div class="grid-item first-row-1"> 
+        <div class="icon2">
+            <!-- <a href="https://ssrn.com/abstract=3920788" target="_blank"> -->
+                <i class="fa fa-gears"></i></a>
+        </div> <br>
+        <h3> Research </h3><br>
+        <p> As part of the fellowship, I went on field-visit, organized-conducted online interviews with healthcare professionals, and attended Econ-50 classes and team meetings for 8 weeks. I qualified for the verified course certification completion of Economics 50 “Big Data'' course. Our research paper is published at SSRN and was listed on SSRN's Top Ten download list for Child & Adolescent Health eJournal. </p>
+    </div>
+
+    <div class="grid-item first-row-2"> 
+        <div class="icon2">
+            <i class="fa fa-users"></i>
+        </div><br>
+        <h3> Leadership </h3> <br>
+        <p> As a member of student council, I have organized major school events like annual School day, sports meet, School assemblies, etc. we oversaw 10 clubs & 14 houses. I handled council's correspondence. </p>
+    </div>
+    
+    <div class="grid-item first-row-3"> 
+        <div class="icon3">
+            <i class="fa fa-pencil"></i>
+        </div> <br>
+        <h3> Writing </h3> <br>
+        <p> I write about philosophy, tech, history, and the brain (check out my medium). </p>
+    </div>
+    
+    <div class="grid-item second-row-1"> 
+        <div class="icon3">
+            <i class="fa fa-graduation-cap"></i>
+        </div> <br>
+        <h3> Tutoring </h3> <br>
+        <p> I teach Compulsory Mathematics, Optional Mathematics and Science Grade-10 student. </p>
+    </div>
+    
+    <div class="grid-item second-row-2"> 
+        <div class="icon3">
+            <i class="fa fa-dribbble"></i>
+        </div> <br>
+        <h3> Basketball </h3> <br>
+        <p> I enable web and user interaction using JavaScript.</p>
+    </div>
+
+    <div class="grid-item second-row-3"> 
+        <div class="icon3">
+            <i class="fa fa-microphone"></i>
+        </div> <br>
+        <h3> Podcast </h3><br>
+        <p>I initiated video podcasting to archive the stories of alumni and also coordinated & hosted shoots. For the Golden Jubilee celebration of Budhanilkantha 
+            School I edited & released its trailer.</p>
+    </div>
+</div> 
 
 </div>
 <!----slide-5---->
 <div id="Blog">
+
     
 </div>
 <!----slide-6---->
-<div id="Work">
+<div class="Experience">
+    <ul class="timeline">
+      <li>
+        <h3>March 2022 - Current</h3>
+        <p>
+        <ol>Planned lessons to target subject weaknesses and build skills within strengths.</ol>
+        <ol>Provided Compulsory math and Optional math tutoring, helping 10th grader to achieve target grades.</ol>
+        <ol>Taught few students remotely through live video sessions on Zoom from out of valley.</ol></p>
+      </li>
+      <li>
+        <h3>March 2022 - Current</h3>
+        <p>
+        <ol>Planned lessons to target subject weaknesses and build skills within strengths.</ol>
+        <ol>Provided Compulsory math and Optional math tutoring, helping 10th grader to achieve target grades.</ol>
+        <ol>Taught few students remotely through live video sessions on Zoom from out of valley.</ol></p>
+      </li>
+      <li>
+        <h3>March 2022 - Current</h3>
+        <p>
+        <ol>Planned lessons to target subject weaknesses and build skills within strengths.</ol>
+        <ol>Provided Compulsory math and Optional math tutoring, helping 10th grader to achieve target grades.</ol>
+        <ol>Taught few students remotely through live video sessions on Zoom from out of valley.</ol></p>
+      </li>
+    </ul>  
+</div>
+
 </div>
 <!----slide-7---->
 <div id="Connect">

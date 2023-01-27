@@ -5,99 +5,274 @@
 }
 
 /*Slide-1 */ 
+
 .nav{
     text-align: right;
-    background-color: black;
-    font-size: 20px;
+    background-color:#edeced;
+    font-size: 25px;
+    font-weight:bolder;
     padding: 2%;
-    font-family:fantasy;
+    /* font-family:fantasy; */
+    
 }
+
 .Home{
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     display: flex;
-    height: 80%;
-    background-color: black;
+    height: 100%;
+    background-color:#edeced ;
 }
+
 .leftside{
-    color: whitesmoke;
-    padding: 5%;
+    position: relative;
     width: 50%;
+    text-align: center;
+    
 }
 .rightside{
+    color: #edeced;
+    padding: 5%;
     width: 50%;
+    font-size: 50px;
+    z-index: 2;
 }
-.button{
-    margin-top: 80px;
-    display: flex; 
-    justify-content: space-between;
+.text{
+    position: relative;
+    z-index: 1;
+}   
+.shape{
+    text-align:center;
+    position: absolute;
+    z-index: -1;
 }
-#button1, #button2{
-    text-decoration: none;
+#shape{
+    width: 100%;
+    height: 90%;
+    padding-top: 18%;
+    padding-right: 5%;
+
+}
+.icon1{  
+    display: flex;
+    
+}
+
+i{
+    color: #edeced;
     flex: 1;
-    padding: 10px 50px;
-    margin-right: 10px;
-    border-radius: 30px;
-    background: white;
-    color: black;
-    font-size: 18px;
-    line-height: 1.4;
-    font-weight: 800;
-    transition: all 0.5s ease;
-}
-.button1 :hover, .button2 :hover{
-    border-radius: 30px;
-    background:rgb(20, 0, 30);
-    color: white;
+    padding: 40px;
+    padding-left: 90px;
+    
 }
 
 #myphoto{
-    width: 100%;
-    height: 100%;
-    padding: 8%;
-    border-image: 1 0;
-    opacity: 0.6;
+    width: 80%;
+    height: 80%;
+    padding-top: 5%;
+    padding-bottom: 0%;
 }
 #name{
     font-size: 60px;
     padding-top: 200px;
-    padding-left: 100px;
-    
+    padding-left: 135px;
 }
 #designation{
     font-size: 40px;
-    padding-left: 180px;
+    padding-left: 200px;
     padding-top: 50px;
     
 }
-/*Slide-2 */ 
-.About{
-    background-color: black;
-    display: flex;
-}
-.rightside1, .leftside1{
-    flex: 1;
+/* slide--2 */
 
+.Academics{
+    font-family: helvetica, sans-serif;
+    margin: 0;
+    overflow-x: hidden; /*Prevents Hor. Scroll*/
+
+    }
+
+/* BACKGROUND IMAGE
+------------------------------*/
+#large-bg-image {
+    /*position:absolute;*/
+    z-index: 2;
+    top:0px;left:0px;
+    text-align:center;
+    margin:-50px 0 0 0;
+    padding:0px;
+    background-color:#C0DEED;
+    background:url(http://thewanderers.net/w/wp-content/uploads/2013/07/Rigi_Panorama_full.jpg) center top repeat-x;
+    padding-top:100px;
+    padding-bottom:10px;
+    width: 100%;
+    height: 800px;
+    animation: large-bg-image-animasi 200s linear infinite;
+    -ms-animation: large-bg-image-animasi 200s linear infinite;
+    -moz-animation: large-bg-image-animasi 200s linear infinite;
+    -webkit-animation: large-bg-image-animasi 200s linear infinite;
+    }
+
+@keyframes large-bg-image-animasi {
+  from {
+    background-position: 0 0;
+  }
+
+  to {
+    background-position: 100% 0;
+  };
 }
-#About{
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 40px;
-    padding-top: 30px;
-    padding-bottom: 20px;
+
+@-webkit-keyframes large-bg-image-animasi {
+  from {
+    background-position: 0 0;
+  }
+
+  to {
+    background-position: 100% 0;
+  };
+}
+
+@-ms-keyframes large-bg-image-animasi {
+  from {
+    background-position: 0 0;
+  }
+
+  to {
+    background-position: 100% 0;
+  };
+}
+
+@-moz-keyframes large-bg-image-animasi {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 100% 0;
+  };
+}
+
+
+
+/* TEXT
+Text animates independently.
+You can adjust the speed to 
+create interesting effects.
+------------------------------*/
+.marker-title{
+    font-size: 28px;
+    color: black;
+    font-weight: bold;
+    display: block;
+    }
+.marker-caption{
+    color: gray;
+    }
+
+.move,
+.move2 { 
+    border-left: 2px solid white;
+    height: 300px;
+    padding-left: 30px;
+    opacity: 0.5;  
+    width: 280px;
+    /* top: 200px;
+    position: absolute; */
+    }
+    .move:hover,
+    .move2:hover { 
+        opacity: 1;   
+        }
+
+.move {
+    cursor: pointer;
+    text-align: left;
     color: white;
-    text-align: center;
+    right: 10%;
+    transform-origin: bottom left;
+    opacity: 0.5;
+    }
+
+/* Marker 2 */
+ .move {
+    -webkit-animation: move-move 1s 0s ease-out forwards;
+    animation: move-move 1s 0s ease-out forwards;
+    -webkit-animation-duration: 55s;
+    animation-duration: 55s;
 }
-#secondphoto{
+/* This is the controls for moves sledge*/
+ .move2 {
+   cursor: pointer;
+    text-align: left;
+    right: -600px;
+    transform-origin: bottom left;
+}
+/* This is the controls for moves sledge*/
+ .move2 {
+    -webkit-animation: move-move 1s 0s ease-out forwards;
+    animation: move-move 1s 0s ease-out forwards;
+    -webkit-animation-duration: 80s;
+    animation-duration: 80s;
+}
+@-webkit-keyframes move-move {
+    100% {
+        right: 100%;
+    }
+}
+@keyframes move-move {
+    100% {
+        right:100%;
+    }
+}
+/**/
+
+
+
+  
+/* Slide-4  */
+#Extracurriculars{
+    text-align: center;
+    color: white;
+    background-color: #601e1e; 
+    padding-top: 50px;
+}
+#Extra-Curriculars{
     height: 100%;
     width: 100%;
-    padding: 8%;
-    border-image: 1 0;
-    opacity: 0.8;
-}
-#description{
-    color: white;
-    padding: 5px;
-    text-align: center;
-    font-size: 30px;
-    font-weight: normal;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    background-color: #601e1e;;
+    justify-content: center;
+    text-align:center;
 }
 
+.grid-item{
+    color:#edeced;
+    padding: 20px;
+    margin: 20px;
+    font-size: 20px;
+    text-align: center;
+}
+.first-row-1, .first-row-2{
+    grid-column: span 2;
+} 
+.icon2{
+    padding-right: 100px;
+    font-size: 50px; 
+    margin: 5px; 
+    color: purple;
+
+}
+
+.icon3{
+    font-size: 50px; 
+    margin: 20px; 
+    padding-bottom:20px; 
+    height: 60px; 
+    width: 60px; 
+    border-radius: 50%;
+    color: purple;
+}
+
+
+  
