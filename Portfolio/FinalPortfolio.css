@@ -12,6 +12,7 @@
     font-size: 25px;
     font-weight:bolder;
     padding: 2%;
+
     /* font-family:fantasy; */
     
 }
@@ -39,6 +40,7 @@
 .text{
     position: relative;
     z-index: 1;
+   
 }   
 .shape{
     text-align:center;
@@ -82,164 +84,53 @@ i{
     padding-top: 50px;
     
 }
-/* slide--2 */
+/* slide--3 */
+#Academics{
+    text-align: center;
+    display: flex;
+    background-color: #DE9A58;
+    color: #005B49;
+    padding: 20px;
+}
+#academics{
+    font-size: 40px;
+    padding-top: 30px;
+    text-align: center;
+    background-color: #DE9A58;
+    color: #005B49;
+}
+.undergraduate, .highschool {
+    /* border: #005B49;
+    border-width: 20px; */
+    padding: 50px;
+    margin: 40px;
+    opacity: 0.6;
+}
+.undergraduate:hover, .highschool:hover {
+    opacity: 1;
+}
+#heraldlogo{
+    width: 50%;
+    padding-bottom: 30px;
 
-.Academics{
-    font-family: helvetica, sans-serif;
-    margin: 0;
-    overflow-x: hidden; /*Prevents Hor. Scroll*/
-
-    }
-
-/* BACKGROUND IMAGE
-------------------------------*/
-#large-bg-image {
-    /*position:absolute;*/
-    z-index: 2;
-    top:0px;left:0px;
-    text-align:center;
-    margin:-50px 0 0 0;
-    padding:0px;
-    background-color:#C0DEED;
-    background:url(http://thewanderers.net/w/wp-content/uploads/2013/07/Rigi_Panorama_full.jpg) center top repeat-x;
-    padding-top:100px;
-    padding-bottom:10px;
-    width: 100%;
-    height: 800px;
-    animation: large-bg-image-animasi 200s linear infinite;
-    -ms-animation: large-bg-image-animasi 200s linear infinite;
-    -moz-animation: large-bg-image-animasi 200s linear infinite;
-    -webkit-animation: large-bg-image-animasi 200s linear infinite;
-    }
-
-@keyframes large-bg-image-animasi {
-  from {
-    background-position: 0 0;
-  }
-
-  to {
-    background-position: 100% 0;
-  };
+}
+#bnkslogo{
+    width: 25%;
+    padding-bottom: 30px;
 }
 
-@-webkit-keyframes large-bg-image-animasi {
-  from {
-    background-position: 0 0;
-  }
-
-  to {
-    background-position: 100% 0;
-  };
-}
-
-@-ms-keyframes large-bg-image-animasi {
-  from {
-    background-position: 0 0;
-  }
-
-  to {
-    background-position: 100% 0;
-  };
-}
-
-@-moz-keyframes large-bg-image-animasi {
-  from {
-    background-position: 0 0;
-  }
-  to {
-    background-position: 100% 0;
-  };
-}
-
-
-
-/* TEXT
-Text animates independently.
-You can adjust the speed to 
-create interesting effects.
-------------------------------*/
-.marker-title{
-    font-size: 28px;
-    color: black;
-    font-weight: bold;
-    display: block;
-    }
-.marker-caption{
-    color: gray;
-    }
-
-.move,
-.move2 { 
-    border-left: 2px solid white;
-    height: 300px;
-    padding-left: 30px;
-    opacity: 0.5;  
-    width: 280px;
-    /* top: 200px;
-    position: absolute; */
-    }
-    .move:hover,
-    .move2:hover { 
-        opacity: 1;   
-        }
-
-.move {
-    cursor: pointer;
-    text-align: left;
-    color: white;
-    right: 10%;
-    transform-origin: bottom left;
-    opacity: 0.5;
-    }
-
-/* Marker 2 */
- .move {
-    -webkit-animation: move-move 1s 0s ease-out forwards;
-    animation: move-move 1s 0s ease-out forwards;
-    -webkit-animation-duration: 55s;
-    animation-duration: 55s;
-}
-/* This is the controls for moves sledge*/
- .move2 {
-   cursor: pointer;
-    text-align: left;
-    right: -600px;
-    transform-origin: bottom left;
-}
-/* This is the controls for moves sledge*/
- .move2 {
-    -webkit-animation: move-move 1s 0s ease-out forwards;
-    animation: move-move 1s 0s ease-out forwards;
-    -webkit-animation-duration: 80s;
-    animation-duration: 80s;
-}
-@-webkit-keyframes move-move {
-    100% {
-        right: 100%;
-    }
-}
-@keyframes move-move {
-    100% {
-        right:100%;
-    }
-}
-/**/
-
-
-
-  
 /* Slide-4  */
 #Extracurriculars{
     text-align: center;
     color: white;
     background-color: #601e1e; 
     padding-top: 50px;
+    font-size: 50px;
 }
+
 #Extra-Curriculars{
-    height: 100%;
-    width: 100%;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
     background-color: #601e1e;;
     justify-content: center;
@@ -253,26 +144,35 @@ create interesting effects.
     font-size: 20px;
     text-align: center;
 }
-.first-row-1, .first-row-2{
-    grid-column: span 2;
-} 
-.icon2{
-    padding-right: 100px;
+
+.icon2, .icon3{
+    padding-right: 70px;
     font-size: 50px; 
     margin: 5px; 
-    color: purple;
 
 }
 
-.icon3{
-    font-size: 50px; 
-    margin: 20px; 
-    padding-bottom:20px; 
-    height: 60px; 
-    width: 60px; 
-    border-radius: 50%;
-    color: purple;
+/* slide-4 */
+#Experience{
+    background-color:#D1E7E0;
 }
+
+/* Last slide  */
+#Connect{
+    font-size: 60px;
+    background-color: #601e1e;
+    text-align: center;
+
+}
+footer{
+    height: 40px;
+    padding: 10px;
+    font-size: 20px;
+    text-align: center;
+    color: #edeced;
+    background-color:#330000;
+}
+
 
 
   
