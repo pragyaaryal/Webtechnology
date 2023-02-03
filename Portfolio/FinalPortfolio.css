@@ -7,21 +7,21 @@
 /*Slide-1 */ 
 
 .nav{
-    text-align: right;
     background-color:#edeced;
     font-size: 25px;
     font-weight:bolder;
     padding: 2%;
-
-    /* font-family:fantasy; */
+    position: fixed;
+    width: 100%;
     
 }
 
-.Home{
+#Home{
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     display: flex;
     height: 100%;
     background-color:#edeced ;
+    background-position: fixed;
 }
 
 .leftside{
@@ -159,10 +159,26 @@ i{
 
 /* Last slide  */
 #Connect{
+    display: flex;
     font-size: 60px;
     background-color: #601e1e;
-    text-align: center;
 
+}
+#connect1{
+    text-align: left;
+    font-size: 50px;
+    padding: 40px;
+}
+
+.connect{
+    color: #edeced;
+    flex: 3;
+    text-align: center;
+}
+.contact{
+    flex:1;
+    font-size: 50px;
+    padding: 40px;
 }
 footer{
     height: 40px;
