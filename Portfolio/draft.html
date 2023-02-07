@@ -163,3 +163,146 @@ h3{
 	opacity:1;
 	transform:translateX(0);
 }
+
+
+.Academics{
+    font-family: helvetica, sans-serif;
+    margin: 0;
+    overflow-x: hidden; /*Prevents Hor. Scroll*/
+
+    }
+
+/* BACKGROUND IMAGE
+------------------------------*/
+#large-bg-image {
+    /*position:absolute;*/
+    z-index: 2;
+    top:0px;left:0px;
+    text-align:center;
+    margin:-50px 0 0 0;
+    padding:0px;
+    background-color:#BFA5A3;
+    background:url(http://thewanderers.net/w/wp-content/uploads/2013/07/Rigi_Panorama_full.jpg) center top repeat-x;
+    padding-top:100px;
+    padding-bottom:10px;
+    width: 100%;
+    height: 800px;
+    animation: large-bg-image-animasi 200s linear infinite;
+    -ms-animation: large-bg-image-animasi 200s linear infinite;
+    -moz-animation: large-bg-image-animasi 200s linear infinite;
+    -webkit-animation: large-bg-image-animasi 200s linear infinite;
+    }
+
+@keyframes large-bg-image-animasi {
+  from {
+    background-position: 0 0;
+  }
+
+  to {
+    background-position: 100% 0;
+  };
+}
+
+@-webkit-keyframes large-bg-image-animasi {
+  from {
+    background-position: 0 0;
+  }
+
+  to {
+    background-position: 100% 0;
+  };
+}
+
+@-ms-keyframes large-bg-image-animasi {
+  from {
+    background-position: 0 0;
+  }
+
+  to {
+    background-position: 100% 0;
+  };
+}
+
+@-moz-keyframes large-bg-image-animasi {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 100% 0;
+  };
+}
+
+
+
+/* TEXT
+Text animates independently.
+You can adjust the speed to 
+create interesting effects.
+------------------------------*/
+.marker-title{
+    font-size: 28px;
+    color: black;
+    font-weight: bold;
+    display: block;
+    }
+.marker-caption{
+    color: #2F4858;
+    }
+
+.move,
+.move2 { 
+    border-left: 2px solid white;
+    height: 300px;
+    padding-left: 30px;
+    opacity: 0.5;  
+    width: 280px;
+    /* top: 200px;
+    position: absolute; */
+    }
+    .move:hover,
+    .move2:hover { 
+        opacity: 1;   
+        }
+
+.move {
+    cursor: pointer;
+    text-align: left;
+    color: white;
+    right: 10%;
+    transform-origin: bottom left;
+    opacity: 0.5;
+    }
+
+/* Marker 2 */
+ .move {
+    -webkit-animation: move-move 1s 0s ease-out forwards;
+    animation: move-move 1s 0s ease-out forwards;
+    -webkit-animation-duration: 55s;
+    animation-duration: 55s;
+}
+/* This is the controls for moves sledge*/
+ .move2 {
+   cursor: pointer;
+    text-align: left;
+    right: -600px;
+    transform-origin: bottom left;
+}
+/* This is the controls for moves sledge*/
+ .move2 {
+    -webkit-animation: move-move 1s 0s ease-out forwards;
+    animation: move-move 1s 0s ease-out forwards;
+    -webkit-animation-duration: 80s;
+    animation-duration: 80s;
+}
+@-webkit-keyframes move-move {
+    100% {
+        right: 100%;
+    }
+}
+@keyframes move-move {
+    100% {
+        right:100%;
+    }
+}
+/**/
+

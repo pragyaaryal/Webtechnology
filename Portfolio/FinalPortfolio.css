@@ -7,32 +7,40 @@
 /*Slide-1 */ 
 
 .nav{
-    background-color:#edeced;
     font-size: 25px;
     font-weight:bolder;
     padding: 2%;
     position: fixed;
     width: 100%;
-    
+    text-align: center;
+    z-index: 3;
+    color: #005B49;
+    background-color: #edeced;
+}
+a{
+    text-decoration: none;
+    color: #005B49;
+    padding: 2%;
+}
+a:hover{
+    color: #601e1e;
 }
 
 #Home{
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     display: flex;
-    height: 100%;
+    width: 100%;
     background-color:#edeced ;
-    background-position: fixed;
 }
-
 .leftside{
-    position: relative;
     width: 50%;
     text-align: center;
+    padding-top: 10%; 
     
 }
 .rightside{
     color: #edeced;
-    padding: 5%;
+    padding-top: 10%; 
     width: 50%;
     font-size: 50px;
     z-index: 2;
@@ -40,30 +48,26 @@
 .text{
     position: relative;
     z-index: 1;
+    padding: 2%;
    
 }   
 .shape{
     text-align:center;
     position: absolute;
     z-index: -1;
-}
-#shape{
-    width: 100%;
-    height: 90%;
-    padding-top: 18%;
-    padding-right: 5%;
+    padding-top: 169px;
+    padding-left: 65px;;
 
 }
+
 .icon1{  
     display: flex;
-    
+    padding-left: 225px;
+    color: #edeced;
 }
-
 i{
     color: #edeced;
-    flex: 1;
-    padding: 40px;
-    padding-left: 90px;
+    padding: 20px;
     
 }
 
@@ -75,36 +79,69 @@ i{
 }
 #name{
     font-size: 60px;
-    padding-top: 200px;
-    padding-left: 135px;
+    padding-top: 250px;
+    padding-left: 190px;
 }
 #designation{
     font-size: 40px;
-    padding-left: 200px;
-    padding-top: 50px;
+    padding-left: 285px;
+    padding-top: 40px;
     
 }
+
+/* Slide-2 */
+
+ #About{
+    min-height: 500px;
+    background-color: #edeced;
+    text-align: center;
+    padding-left: 200px;
+    padding-right: 200px;
+    justify-content: center;
+    color:#3a0606;
+ }
+#About h1{
+    font-size: 60px;
+    text-align: center;
+    color:#4F4350;
+    text-align: center;
+    padding-bottom: 50px;
+}
+.button{
+    padding: 30px;
+} 
+.CV{
+    background-color: #013d49;
+    color:#edeced;
+    width: 20%;
+}
+.CV:hover{
+    background-color:#005B49;
+}
+
+
 /* slide--3 */
 #Academics{
     text-align: center;
     display: flex;
-    background-color: #DE9A58;
-    color: #005B49;
+    background-color: #edeced;
+    color: #65587E;
     padding: 20px;
 }
 #academics{
-    font-size: 40px;
-    padding-top: 30px;
+    font-size: 60px;
+    padding-top: 50px;
     text-align: center;
-    background-color: #DE9A58;
-    color: #005B49;
+    background-color: #edeced;
+    color:#4F4350;
 }
 .undergraduate, .highschool {
-    /* border: #005B49;
-    border-width: 20px; */
+    flex: 1;
+    background-color: #a5ddcc;
+    border-radius: 30px;
     padding: 50px;
     margin: 40px;
-    opacity: 0.6;
+    opacity: 0.8;
 }
 .undergraduate:hover, .highschool:hover {
     opacity: 1;
@@ -116,53 +153,187 @@ i{
 }
 #bnkslogo{
     width: 25%;
-    padding-bottom: 30px;
+    padding-bottom: 20px;
 }
 
 /* Slide-4  */
-#Extracurriculars{
+#experience{
+    color:#4F4350;
+    font-size: 60px;
     text-align: center;
-    color: white;
-    background-color: #601e1e; 
-    padding-top: 50px;
-    font-size: 50px;
+    padding-top: 60px;
+}
+#Experience{
+    color:#006A99;
+    background-color:#edeced;
+    text-align: center;
+}
+
+.tutor, .Intern, .Research{
+    text-align: left;
+    padding: 5px;
+    padding-left: 20%;
+    margin-top: 7%; 
+}
+.tutor h1{
+    color:#003B66
+}
+.Intern h1{
+    color:#003B66
+}
+.Research h1{
+color:#003B66
+}
+.tutor img {
+    background-color: white;
+    display: block;
+    margin-right: 30px;
+    width: 20%;
+    border: 4px; 
+    border-radius: 15%; 
+    padding: 2% 1% 2%;  
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    float: left;
+  }
+
+  .Intern img {
+    background-color: white;
+    display: block;
+    margin-right: 30px;
+    width: 20%;
+    border: 4px; 
+    border-radius: 15%; 
+    padding: 6% 1% 4%;  
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    float: left;
+  }
+  .Research img {
+    background-color: white;
+    display: block;
+    margin-right: 30px;
+    width: 20%;
+    border: 4px; 
+    border-radius: 15%; 
+    padding: 1% 1% 2%;  
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    float: left;
+  }
+    
+  
+/* slide-5 */
+#Extra-Curriculars h1{
+    text-align: center;
+    color:#4F4350;
+    background-color: #edeced;
+    padding: 80px;
+    padding-top: 150px;
+    font-size: 60px;
+
 }
 
 #Extra-Curriculars{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    background-color: #601e1e;;
-    justify-content: center;
+    background-color:#edeced;
     text-align:center;
 }
 
-.grid-item{
+.firstrow, .secondrow{
+    display: flex;
     color:#edeced;
-    padding: 20px;
-    margin: 20px;
     font-size: 20px;
+    text-align: center;   
+  
+}
+    
+
+.icon2, .icon3{
+    font-size: 50px; 
+}
+.first-row-1, .first-row-2, .first-row-3, .second-row-1, .second-row-2, .second-row-3, .second-row-4{
+   flex: 1;
+   padding: 20px;
+   background-color: #2F4858;
+   margin: 10px;
+   border-radius: 20px ;
+}
+
+/* Slide-6 */
+#blog{
+    color:#4F4350;
+    font-size: 60px;
+    text-align: center;
+    padding-top: 50px;
+}
+#Blog{
+    color: #092607;
+    background-color:#edeced;
     text-align: center;
 }
 
-.icon2, .icon3{
-    padding-right: 70px;
-    font-size: 50px; 
-    margin: 5px; 
-
+.blog1, .blog2, .blog3{
+    display: inline-block;
+    padding: 50px;
+    text-align: left;
+    padding-left: 20%;
+}
+.blog1 h1{
+    color:#003B66
+}
+.blog1 h1:hover{
+    color:#3F72BD;
+}
+.blog2 h1{
+    color:#003B66
+}
+.blog2 h1:hover{
+    color:#3F72BD;
+}
+.blog3 h1{
+color:#003B66;
+}
+.blog3 h1:hover{
+    color:#3F72BD;
 }
 
-/* slide-4 */
-#Experience{
-    background-color:#D1E7E0;
-}
+.blog1 img {
+    background-color: white;
+    display: block;
+    margin-right: 30px;
+    width: 20%;
+    border: 4px; 
+    border-radius: 15%; 
+    padding: 2% 1% 2%;  
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    float: right;
+  }
 
+  .blog2 img {
+    background-color: white;
+    display: block;
+    margin-right: 30px;
+    width: 20%;
+    border: 4px; 
+    border-radius: 15%; 
+    padding: 2% 1% 2%;   
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    float: right;
+  }
+  .blog3 img {
+    background-color: white;
+    display: block;
+    margin-right: 30px;
+    width: 20%;
+    border: 4px; 
+    border-radius: 15%; 
+    padding: 1% 1% 2%;  
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    float: right;
+  }
+    
 /* Last slide  */
 #Connect{
     display: flex;
     font-size: 60px;
-    background-color: #601e1e;
-
+    background-color:#0F2C44
 }
 #connect1{
     text-align: left;
@@ -171,7 +342,8 @@ i{
 }
 
 .connect{
-    color: #edeced;
+    display: flex;
+    color:#edeced;
     flex: 3;
     text-align: center;
 }
@@ -179,6 +351,7 @@ i{
     flex:1;
     font-size: 50px;
     padding: 40px;
+    padding-right: 100px;
 }
 footer{
     height: 40px;
@@ -186,7 +359,7 @@ footer{
     font-size: 20px;
     text-align: center;
     color: #edeced;
-    background-color:#330000;
+    background-color:#021b30;
 }
 
 
