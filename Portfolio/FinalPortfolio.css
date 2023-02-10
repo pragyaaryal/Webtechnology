@@ -5,7 +5,9 @@
 }
 
 /*Slide-1 */ 
-
+html{
+    scroll-behavior: smooth;
+}
 .nav{
     font-size: 25px;
     font-weight:bolder;
@@ -17,6 +19,7 @@
     color: #005B49;
     background-color: #edeced;
 }
+
 a{
     text-decoration: none;
     color: #005B49;
@@ -45,6 +48,7 @@ a:hover{
     font-size: 50px;
     z-index: 2;
 }
+
 .text{
     position: relative;
     z-index: 1;
@@ -88,7 +92,32 @@ i{
     padding-top: 40px;
     
 }
-
+@media (max-width: 768px){
+    .nav{
+        width:100%;
+        font-size: 20px;
+    }
+    
+}
+@media (max-width: 768px) {
+    .leftside, .rightside {
+      width: 100%;
+      padding-top: 0%;
+    }
+    #name, #designation {
+      padding-top: 0%;
+      text-align: center;
+    }
+    #myphoto {
+      width: 50%;
+      padding-top: 10%;
+    }
+    .icon1 {
+      padding-left: 0%;
+      display: flex;
+      justify-content: center;
+    }
+  }
 /* Slide-2 */
 
  #About{
@@ -119,6 +148,20 @@ i{
     background-color:#005B49;
 }
 
+@media (max-width: 767px) {
+    #About {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    #About h1 {
+        font-size: 40px;
+    }
+
+    .CV {
+        width: 40%;
+    }
+}
 
 /* slide--3 */
 #Academics{
@@ -328,30 +371,72 @@ color:#003B66;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     float: right;
   }
-    
+.button2{
+    padding: 50px;
+    padding-bottom: 100px;
+} 
+.more{
+    background-color: #021b30;
+    color:#edeced;
+    width: 20%;
+}
+.more:hover{
+    background-color:#0F2C44;
+}
 /* Last slide  */
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */ 
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+  }
+.container h1{
+    color:#4F4350;
+  font-size: 50px;
+  text-align: center;
+
+}
+  /* Style the submit button with a specific background color etc */
+  input[type=submit] {
+    background-color: #021b30;
+    color: #edeced;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: center;
+  }
+  
+  /* When moving the mouse over the submit button, add a darker green color */
+  input[type=submit]:hover {
+    background-color: #006A99 ;
+  }
+  
+  /* Add a background color and some padding around the form */
+  .container {
+    background-color: #edeced;
+    padding: 50px 200px 50px 200px;
+
+  }
+
 #Connect{
     display: flex;
     font-size: 60px;
-    background-color:#0F2C44
-}
-#connect1{
-    text-align: left;
-    font-size: 50px;
-    padding: 40px;
-}
-
-.connect{
-    display: flex;
+    background-color:#0F2C44;
     color:#edeced;
-    flex: 3;
-    text-align: center;
+   
 }
-.contact{
-    flex:1;
+#Connect h1{
     font-size: 50px;
     padding: 40px;
-    padding-right: 100px;
+}
+#Connect i{
+    padding-left: 200px;
 }
 footer{
     height: 40px;
@@ -361,7 +446,6 @@ footer{
     color: #edeced;
     background-color:#021b30;
 }
-
 
 
   
