@@ -148,7 +148,7 @@ i{
     background-color:#005B49;
 }
 
-@media (max-width: 767px) {
+@media screen and (max-width: 800px) {
     #About {
         padding-left: 50px;
         padding-right: 50px;
@@ -424,6 +424,8 @@ input[type=text], select, textarea {
 
   }
 
+
+
 #Connect{
     display: flex;
     font-size: 60px;
@@ -438,6 +440,20 @@ input[type=text], select, textarea {
 #Connect i{
     padding-left: 200px;
 }
+
+@media (max-width:767px){
+    #Connect i{
+        font-size: 80%; 
+        padding-left: 2px;
+       
+    }
+    #Connect h1{
+    font-size: 50%;
+    padding: 10px;
+    }
+}
+
+/* footer */
 footer{
     height: 40px;
     padding: 10px;
